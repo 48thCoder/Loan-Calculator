@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Vaibhav Gupta" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/9484e9fcdb.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Loan Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Loan Calculator</h1>
+            <div class="input-group">
+                <label>Loan Amount (<i class="fa-solid fa-indian-rupee-sign"></i>)</label>
+                <input type="number" id="loanAmount" placeholder="Enter loan amount" required />
+            </div>
+
+            <div class="input-group">
+                <label>Interest Rate (%)</label>
+                <input type="number" id="interestRate" placeholder="Enter interest rate" required />
+            </div>
+
+            <div class="input-group">
+                <label>Loan Term (in months)</label>
+                <input type="number" id="loanTerm" placeholder="Enter loan term" required />
+            </div>
+
+            <button id="calculateBtn">Calculate</button>
+            <button id="resetBtn">Reset</button>
+
+            <div id="resultBox">
+                <div id="result"></div>
+                <div id="chartContainer">
+                    <canvas id="loanChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="chart.js"></script>
+</body>
+
+</html>
